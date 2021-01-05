@@ -1,10 +1,10 @@
+const favoriteFood = process.env.FAVORITE_FOOD;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function main() {
-  const favoriteFood = process.env.FAVORITE_FOOD;
   while(true) {
     console.log("Microservices rock!");
     console.log(`My favorite food is ${favoriteFood}`);
